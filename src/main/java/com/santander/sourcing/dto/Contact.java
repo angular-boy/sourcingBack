@@ -21,6 +21,10 @@ public class Contact implements Serializable {
 	String phoneNumber;
 	String email;
 
+	public Contact() {
+
+	}
+
 	public Contact(long id, String firstName, String lastName, String phoneNumber, String email) {
 		this.id = id;
 		this.firstName = firstName;
