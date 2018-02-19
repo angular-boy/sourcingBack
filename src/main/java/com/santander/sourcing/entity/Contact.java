@@ -18,25 +18,25 @@ public class Contact implements Serializable {
 	Long id;
 	String firstName;
 	String lastName;
-	String phoneNumber;
+	String password;
 	String email;
 
 	public Contact() {
 
 	}
 
-	public Contact(long id, String firstName, String lastName, String phoneNumber, String email) {
+	public Contact(long id, String firstName, String lastName, String password, String email) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.phoneNumber = phoneNumber;
+		this.password = password;
 		this.email = email;
 	}
 
 	@Override
 	public String toString() {
-		return "contact [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", phoneNumber="
-				+ phoneNumber + ", email=" + email + "]";
+		return "contact [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", password=" + password
+				+ ", email=" + email + "]";
 	}
 
 	public Long getId() {
@@ -63,12 +63,12 @@ public class Contact implements Serializable {
 		this.lastName = lastName;
 	}
 
-	public String getPhoneNumber() {
-		return phoneNumber;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public String getEmail() {
