@@ -1,4 +1,4 @@
-package com.santander.sourcing.dto;
+package com.santander.sourcing.entity;
 
 import java.io.Serializable;
 
