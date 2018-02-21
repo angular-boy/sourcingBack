@@ -11,7 +11,12 @@ public class ContactService {
 	@Autowired
 	ContactRepository dao;
 
-	public Contact save(Contact contact) {
-		return dao.saveAndFlush(contact);
+	public boolean save(Contact contact) {
+		if (dao.findByEmail(contact.getEmail()) == null) {
+			dao.saveAndFlush(contact);
+			return true;
+		} else {
+			return false;
+		}
 	}
 }

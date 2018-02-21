@@ -35,7 +35,7 @@ public class Contact implements Serializable {
 
 	@Override
 	public String toString() {
-		return "contact [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", password=" + password
+		return "Contact [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", password=" + password
 				+ ", email=" + email + "]";
 	}
 

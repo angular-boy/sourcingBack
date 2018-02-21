@@ -18,7 +18,7 @@ public class ContactsApi {
 	ContactService contactService;
 
 	@RequestMapping(value = "/contact", method = RequestMethod.POST)
-	public void updateOrSave(@RequestBody Contact contact) {
-		contactService.save(contact);
+	public boolean updateOrSave(@RequestBody Contact contact) {
+		return contactService.save(contact);
 	}
 }

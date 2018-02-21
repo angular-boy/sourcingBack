@@ -6,4 +6,6 @@ import com.santander.sourcing.entity.Contact;
 
 public interface ContactRepository extends JpaRepository<Contact, Long> {
 
+	Contact findByEmail(String email);
+
 }
